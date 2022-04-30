@@ -124,7 +124,7 @@ STACKS = [
         "token": RIGHT,
     },
     {
-        "name": "Vermling Raider",
+        "name": "Vermling Scout",
         "cards": 8,
         "standees": 10,
         "split_stack": CardSplitL,
@@ -153,7 +153,7 @@ STACKS = [
         "standees": 0,
         "split_stack": False,
         "width": None,
-        "location_include": ["Zealot", "Vermling Raider", "Giant Viper"],
+        "location_include": ["Zealot", "Vermling Scout", "Giant Viper"],
     },
     # {
     #     "name": "Basic Zealot",
@@ -191,10 +191,10 @@ STACKS = [
         "split_stack": CardSide,
         "width": 33,
         "token": 0,
-        "token_include": ["Vermling Scout"],
+        "token_include": ["Vermling Raider"],
     },
     {
-        "name": "Vermling Scout",
+        "name": "Vermling Raider",
         "cards": 8,
         "standees": 6,
         "split_stack": CardSide,
@@ -262,8 +262,7 @@ def card_stack_o(d):
 
 
 def label(txt, h=1, z=-TEXT_D, point_size=3):
-    """Generates the object(s) for the given text, up to 3 lines
-    """
+    """Generates the object(s) for the given text, up to 3 lines"""
     LINE_H = point_size + 1
     txt = txt.upper()
     parts = txt.split(" ")
